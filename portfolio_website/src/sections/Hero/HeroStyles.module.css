@@ -4,12 +4,13 @@
   justify-content: center;
   text-align: center;
   gap: 20px;
-  height: 100vh;
+  height: 90vh;
   min-height: 500px;
  margin: auto;
+ padding-top: 30px;
 
 .hero{
-  max-width: 200px;
+  max-width: 160px;
   border-radius: 100%;
 }
 span{
@@ -67,28 +68,45 @@ button:acive{
   flex-direction: column;
   gap: 20px;
 }
-@media(width>=800px){
+@media(width>=720px){
   .container{
     flex-direction:row;
     align-items: center;
     justify-content:space-evenly;
     gap: 60px;
+    height: 80vh;
+    min-height: 100px;
 
 
     .hero{
-      max-width: 350px;
-      width: 350px;
+      max-width: 300px;
+      width: 400px;
     }
   }
 }
 
 @media(width>=1400px){
   
+  .container{
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 200px;
+    height: 80vh;
+    
+
 
 
     .hero{
-      max-width: 400px;
+      max-width: 450px;
       width: 400px;
-    
+    }
+    .description{
+      max-width: 49ch;
+      
+     
+    }
   }
 }
+
+    

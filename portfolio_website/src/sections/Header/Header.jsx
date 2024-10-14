@@ -1,21 +1,45 @@
+import { useState } from 'react';
 import styles from './HeaderStyles.module.css';
+import { FaBars } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
+
 
 function Header() {
+
+  const [isOpen,SetIsOpen] =useState(false);
+  const toggleMenu =()=>{
+    SetIsOpen(!isOpen);
+
+  }
   return (
-   <section id='header' className={styles.container}>
-    <Header className={styles.header}>
-      <a href="#" className={styles.logo}>Harsh</a>
-      <nav className={styles.navbar}>
-        <a href="#" className='active'>Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Skill</a>
-        <a href="#">Contact</a>
-      </nav>
-    </Header>
-   </section>
-  )
+   <nav className={styles.mainnav}>
+    <div className={styles.logo}>Harsh</div>
+
+    <div className={isOpen ? styles.menulink.active:styles.menulink}>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Project</a>
+        </li>
+        <li>
+          <a href="#">Skills</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div className={styles.download}><button> Resume <MdOutlineFileDownload />
+    </button></div>
+    <div className={styles.icon} onClick={toggleMenu}><FaBars /></div>
+    
+   </nav>
+  );
 }
 
-export default Header
+export default Header;

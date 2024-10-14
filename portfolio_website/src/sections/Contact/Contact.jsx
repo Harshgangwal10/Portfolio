@@ -5,7 +5,7 @@ function Contact() {
     <section id="contact" className={styles.container}>
   
       <form action="">
-      <h1 className="sectioTitle">Contact</h1>
+      <h1 className="sectionTitle">Contact</h1>
       <div className="formGroup">
         <label htmlFor="name" hidden>
           Name

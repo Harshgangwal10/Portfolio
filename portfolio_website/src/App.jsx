@@ -8,12 +8,12 @@ import Header from "./sections/Header/Header";
 function App() {
   return (
     <>
-      <Header/>
+      <Header/> 
       <Hero />
       <Project />
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      <Skills/> 
+      <Contact/> 
+       <Footer/> 
     </>
   );
 }
