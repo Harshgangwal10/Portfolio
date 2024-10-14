@@ -19,7 +19,7 @@ function Hero() {
         <h1>
           Harsh <br />Gangwal
         </h1>
-        <h2>Fronted Developer</h2>
+        <h2>Frontend Developer</h2>
         <span>
           <a href="https://linkedin.com" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />

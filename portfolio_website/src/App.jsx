@@ -4,11 +4,11 @@ import Project from "./sections/Projects/Project";
 import Skills from "./sections/Skills/Skills";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./sections/Footer/Footer";
-// import Header from "./sections/Header/Header";
+import Header from "./sections/Header/Header";
 function App() {
   return (
     <>
-      {/* <Header/> */}
+      <Header/>
       <Hero />
       <Project />
       <Skills/>
