@@ -20,6 +20,12 @@ function Hero() {
           Harsh <br />Gangwal
         </h1>
         <h2>Frontend Developer</h2>
+        <p className={styles.description}>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+          labore nesciunt optio facere voluptate nobis quas minima quidem
+          recusandae temporibus. Repudiandae expedita totam quod distinctio,
+          quas nesciunt ducimus architecto placeat.
+        </p>
         <span>
           <a href="https://linkedin.com" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
@@ -31,12 +37,7 @@ function Hero() {
             <img src={twitterIcon} alt="twitter icon" />
           </a>
         </span>
-        <p className={styles.description}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-          labore nesciunt optio facere voluptate nobis quas minima quidem
-          recusandae temporibus. Repudiandae expedita totam quod distinctio,
-          quas nesciunt ducimus architecto placeat.
-        </p>
+        
         <a href={CV} download>
           <button className="hover" download>
             Resume

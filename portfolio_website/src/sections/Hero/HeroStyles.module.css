@@ -4,10 +4,10 @@
   justify-content: center;
   text-align: center;
   gap: 20px;
-  height: 90vh;
+  height: 80vh;
   min-height: 500px;
  margin: auto;
- padding-top: 30px;
+ padding-top: 20px;
 
 .hero{
   max-width: 160px;
@@ -74,7 +74,7 @@ button:acive{
     align-items: center;
     justify-content:space-evenly;
     gap: 60px;
-    height: 80vh;
+    height: 60vh;
     min-height: 100px;
 
 
@@ -91,8 +91,8 @@ button:acive{
     flex-direction:row;
     align-items: center;
     justify-content:space-evenly;
-    gap: 200px;
-    height: 80vh;
+    gap: 100px;
+    height: 50vh;
     
 
 

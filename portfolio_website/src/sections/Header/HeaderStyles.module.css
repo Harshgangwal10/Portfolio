@@ -4,10 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* display: grid;
-  grid-template-columns: 10rem 1fr 2fr 1fr 10rem; */
-  /* box-shadow: rgba(50, 50, 93,0.25) 0px 50px 100px -200px,rgba(0,0,0,0.3) 0px 30px 60px -30px; */
-
+  position: relative;
 }
 .logo{
 font-size: 40px;
@@ -15,69 +12,83 @@ font-weight: 400;
 color: var(--text-color);
 }
 .menulink{
- 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 30px;
-  font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-  list-style: none;
 }
 .menulink ul{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 30px;
-  font-size: 20px;
-  text-decoration: none;
   list-style: none;
 }
 .menulink ul li{
-  padding: 30px;
-  font-size: 20px;
-  text-decoration: none;
-  list-style: none;
-
+  padding: 0 30px;
+  font-size: 25px;
+}
+.menulink ul li a{
+  text-decoration: none; 
+  color: var(--text-color); 
 }
 .icon{
   display: none;
   font-size: 30px;
+  cursor: pointer;
 }
 
-@media(width<=900px){
+@media(max-width:700px){
+  .mainnav{
+    justify-content: space-between;
+  }
   .logo{
     font-size: 30px;
-    font-weight: 400;
-    color: var(--text-color);
     }
     .icon{
       display: block;
     }
-    .menulink ul {
-      flex-direction: column;
-      justify-content:space-between;
+    .menulink {
+      display: flex;
       position: absolute;
+      justify-content:flex-start;
+      align-items: stretch;
       width:360px;
       height: 70vh;
-      background-color: aliceblue;
+      background-color: #F0F4F8;
       top: -800px;
-      right: 0;
-     
+      transition:top 0.4s ease-in-out;
+      border-radius: 20px;
+    }
+
+    .menulink ul {
+      flex-direction: column;
+      
     }
     .menulink.active {
-      top: 10%;
+     top: 100px; 
     }
-    
     
     .download button{
       border: none;
       border-radius: 20px;
       width: 90px;
-      height: 50px;
+      height: 60px;
       font-size: 15px;
     }
     
   
 }
+@media(700px <= width <=960px){
+  .mainnav{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menulink ul li{
+    padding: 0 20px;
+    font-size: 23px;
+  }
+   .logo{
+    font-size: 33px;
+   }
+   
+  }
+    

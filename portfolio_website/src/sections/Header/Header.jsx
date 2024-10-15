@@ -6,39 +6,40 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 function Header() {
 
-  const [isOpen,SetIsOpen] =useState(false);
+  const [isOpen,setIsOpen] =useState(false);
   const toggleMenu =()=>{
-    SetIsOpen(!isOpen);
+    setIsOpen(!isOpen);
 
-  }
+  };
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
   return (
-   <nav className={styles.mainnav}>
-    <div className={styles.logo}>Harsh</div>
+   <section className={styles.mainnav}>
+    <div className={styles.logo}>Harsh<br/> Gangwal</div>
 
-    <div className={isOpen ?styles.menulink.active:styles. menulink}>
+    <div className={`${styles.menulink} ${isOpen ? styles.active : ''}`}>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#hero" onClick={closeMenu}>Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about" onClick={closeMenu}>About</a>
         </li>
         <li>
-          <a href="#">Project</a>
+          <a href="#project" onClick={closeMenu}>Project</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#skills" onClick={closeMenu}>Skills</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
         </li>
       </ul>
     </div>
-    {/* <div className={styles.download}><button> Resume <MdOutlineFileDownload />
-    </button></div> */}
     <div className={styles.icon} onClick={toggleMenu}><FaBars /></div>
     
-   </nav>
+   </section>
   );
 }
 
