@@ -2,8 +2,8 @@ import styles from "./HeroStyles.module.css";
 import heroimg from "../../assets/hero.jpg";
 import linkedinIcon from "../../assets/linkedin-light.svg";
 import githubIcon from "../../assets/github-light.svg";
-import twitterIcon from "../../assets/twitter-light.svg";
-import CV from "../../assets/cv.pdf"
+import RESUME from "../../assets/resume.pdf"
+
 function Hero() {
   return (
     <section id="hero" className={styles.container}>
@@ -30,12 +30,10 @@ function Hero() {
           <a href="https://github.com" target="_blank">
             <img src={githubIcon} alt="github icon" />
           </a>
-          <a href="https://twitter.com" target="_blank">
-            <img src={twitterIcon} alt="twitter icon" />
-          </a>
+        
         </span>
         
-        <a href={CV} download>
+        <a href={RESUME}>
           <button className="hover" download>
             Resume
           </button>
