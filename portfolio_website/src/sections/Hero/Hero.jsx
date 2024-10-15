@@ -21,10 +21,7 @@ function Hero() {
         </h1>
         <h2>Frontend Developer</h2>
         <p className={styles.description}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-          labore nesciunt optio facere voluptate nobis quas minima quidem
-          recusandae temporibus. Repudiandae expedita totam quod distinctio,
-          quas nesciunt ducimus architecto placeat.
+        I am a pre-final year Computer Science student with a focus on frontend development, skilled in HTML, CSS, JavaScript, and React for building responsive web applications.
         </p>
         <span>
           <a href="https://linkedin.com" target="_blank">

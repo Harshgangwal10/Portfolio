@@ -7,7 +7,7 @@
   height: 80vh;
   min-height: 500px;
  margin: auto;
- padding-top: 20px;
+ padding-top: 12rem;
 
 .hero{
   max-width: 160px;
@@ -76,6 +76,7 @@ button:acive{
     gap: 60px;
     height: 60vh;
     min-height: 100px;
+    padding-top: 14rem;
 
 
     .hero{
@@ -85,7 +86,7 @@ button:acive{
   }
 }
 
-@media(width>=1400px){
+@media(width>=1020px){
   
   .container{
     flex-direction:row;
@@ -93,6 +94,7 @@ button:acive{
     justify-content:space-evenly;
     gap: 100px;
     height: 50vh;
+    padding-top: 15rem;
     
 
 

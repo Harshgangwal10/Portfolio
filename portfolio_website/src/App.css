@@ -1,5 +1,5 @@
 :root{
-  --background-color:#ffff;
+  --background-color:#f7f9fc;
   --btn-color:#0987f2;
   --btn-text-color:#fff;
   --project-card-bg:#ffffff00;
@@ -12,6 +12,7 @@ body{
   display: flex;
   justify-content: center;
   margin: 10px auto 30px ;
+  background-color: #f7f9fc
 }
 #root{
   display: flex;
@@ -38,8 +39,9 @@ h1{
   font-size: 32px;
 }
 p{
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1rem;
+  color: #666; 
+  line-height: 1.5;
 }
 .sectionTitle{
   margin-bottom: 30px;
