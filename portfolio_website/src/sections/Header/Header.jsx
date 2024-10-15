@@ -15,7 +15,7 @@ function Header() {
    <nav className={styles.mainnav}>
     <div className={styles.logo}>Harsh</div>
 
-    <div className={isOpen ? styles.menulink.active:styles.menulink}>
+    <div className={isOpen ?styles.menulink.active:styles. menulink}>
       <ul>
         <li>
           <a href="#">Home</a>
@@ -34,8 +34,8 @@ function Header() {
         </li>
       </ul>
     </div>
-    <div className={styles.download}><button> Resume <MdOutlineFileDownload />
-    </button></div>
+    {/* <div className={styles.download}><button> Resume <MdOutlineFileDownload />
+    </button></div> */}
     <div className={styles.icon} onClick={toggleMenu}><FaBars /></div>
     
    </nav>

@@ -31,14 +31,12 @@ color: var(--text-color);
   justify-content: space-evenly;
   padding: 30px;
   font-size: 20px;
-  list-style: none;
   text-decoration: none;
   list-style: none;
 }
 .menulink ul li{
   padding: 30px;
   font-size: 20px;
-  list-style: none;
   text-decoration: none;
   list-style: none;
 
@@ -54,31 +52,25 @@ color: var(--text-color);
     font-weight: 400;
     color: var(--text-color);
     }
+    .icon{
+      display: block;
+    }
     .menulink ul {
       flex-direction: column;
-      top: -800px;
-      justify-content: space-evenly;
+      justify-content:space-between;
       position: absolute;
-      width: 350px;
-      height: 60vh;
-      background-color: var(--text-color);
+      width:360px;
+      height: 70vh;
+      background-color: aliceblue;
+      top: -800px;
       right: 0;
-      z-index: 10;
+     
     }
-    .menulink ul.active{
+    .menulink.active {
       top: 10%;
     }
-    .menulink ul li{
-      /* display: flex;
-      top: 50px;
-      flex-direction: column; */
-      padding: 10px;
-      font-size: 20px;
-      list-style: none;
-      text-decoration: none;
-      list-style: none;
     
-    }
+    
     .download button{
       border: none;
       border-radius: 20px;
@@ -86,8 +78,6 @@ color: var(--text-color);
       height: 50px;
       font-size: 15px;
     }
-    .icon{
-      display: block;
-    }
+    
   
 }
